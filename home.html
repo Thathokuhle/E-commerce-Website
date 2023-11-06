@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <!------------------------------------Nav---------------------------------------------->
+    <div class="overlay">
+        <div class="login-box">
+            <div class="tabs">
+                <input type="radio" class="tab__radio" name="radio--example" id="#tab1" checked>
+                <label for="#tab1" class="tab_label">Login</label>
+                <div class="tab__content">
+                    <br><br>
+            <label for="text">Username</label><br>
+            <input id="userN" type="text" class="input" placeholder="Username"><br><br>
+
+            <label for="text">Password</label><br>
+            <input id="pass" type="password" class="input" placeholder="Password"><br><br>
+
+            <button id="login">Login</button> <br> <br>
+
+            <button onclick="ClLoginPageFn()">back</button> 
+                </div>
+
+                <input type="radio" class="tab__radio" name="radio--example" id="#tab2">
+                <label for="#tab2" class="tab_label">Create New Account</label>
+                <div class="tab__content">
+ 
+                    <label for="text">Username</label><br>
+                    <input type="text"><br><br>
+                    <label for="text">New Password</label><br>
+                    <input type="password"><br><br>
+                    <label for="text">Confirm Password</label><br>
+                    <input type="password"><br><br>
+                    <button>Create New Account</button><br><br>
+                    <button>Cancel</button>
+
+                </div>
+            </div>
+    
+            <!-- <h1>Login</h1><br><br>
+            <label for="text">Username</label><br>
+            <input id="userN" type="text" class="input" placeholder="Username"><br><br>
+            <label for="text">Password</label><br>
+            <input id="pass" type="password" class="input" placeholder="Password"><br><br>
+            <button id="login">Login</button>  <br>   
+            <button onclick="ClLoginPageFn()">back</button>  -->
+        </div>
+    </div>
+
+    <div class="overlay2" >
+
+        <div class="service-page">
+            <div class="back-arrow">
+                <a href="#" onclick="closeService()">&larr;</a>
+            </div>
+            <h1>Our Services</h1><br>
+            
+        </div>
+    </div>
+
+    <div class="overlay3" >
+        <div class="my-account-page">
+            <div class="back-arrow">
+                <a href="#" onclick="closeAccPage()">&larr;</a>
+            </div>
+            <br><br><br>
+            <h1  style="text-align: center;">My Account Page</h1>
+        </div>
+</div>
+
+<div class="overlay4">
+    <div class="my-About-page">
+        <div class="back-arrow">
+            <a href="#" onclick="closeAboutPage()">&larr;</a>
+        </div>
+        <br><br><br>
+        <h1  style="text-align: center;">About Us</h1>
+
+        <div class="image-box">
+            <img src="abt-img.jpg" alt="best-shp">
+        </div>
+        <div class="page-box">
+            <div class="content-box">
+                    <h2>Who We Are?</h2>
+                    <p>
+                        BestBrightness Pongola Shop is more than just a standard retail business; we're also your one-stop online shop for all your household cleaning needs. We recognize the value of convenience and accessibility in today's fast-paced world, which is why we've expanded our presence to the digital domain.
+                    </p>
+            </div>
+            <div class="content-box">
+                <h2>Promotion</h2>
+                <p>Our dedication to better serving you extends to the digital world. We believe that digital technology has the potential to make your life easier and your home cleaner.  We've taken steps to make it easy for you to find us and access our products and services online.</p>
+        </div>
+        <div class="content-box">
+            <h2>Blog</h2>
+            <p>
+                Our blog is a treasure trove of cleaning ideas, product suggestions, and practical insights to help you keep your home clean and sanitary. We're committed to offering useful content that goes beyond simply selling things.
+            </p>
+    </div>
+    <p>BestBrightness Pongola Shop is more than just a store; we're your dependable partner in cleanliness, whether you come to us in person or online.
+        </p>
+        <p><big style="text-decoration: underline;">Thank you</big> for joining us on our journey for a brighter and cleaner tomorrow!</p>
+        </div>
+    </div>
+</div>
+
+    <nav class="mynav">
+        <input type="checkbox" id="check">
+        <label for="check"  class="checkbtn">
+            <b>&#9776;</b>
+        </label>
+        <label class="logo">
+            <!-- Best Brightness Pongola Shop -->
+            <a href="home.html"><img src="logo2.png" alt="BBPS"></a>
+        </label>
+        
+        <ul class="my-a">
+            <li>
+                <a onclick="clickNavHome()"  href="#">Home</a>
+            </li>
+            <vr></vr>
+            <li><a href="#" onclick="openService()">Services</a></li>
+            <vr ></vr>
+            <li><a href="#" onclick="openAboutPage()">About</a></li>
+            <vr ></vr>
+            <li><a href="#" onclick="openAccPage()">My Account</a></li>
+            <vr ></vr>
+            <li><a href="#" onclick="OpLoginPageFn()">Login</a></li>
+        </ul>
+    </nav>
+      <!------------------------------------Section---------------------------------------------->
+        <section class="sec">
+            <div class="my-p-header-search">
+                    <label for="text">Search For</label>
+                    <span class="se-ioc">
+                        <img src="search-icon.png" alt="">
+                    </span>
+                    <input type="text">
+            </div>
+            <div class="my-product">
+                <div class="sec1">
+                    <h1>Recents News</h1>
+                    <hr>
+                    <br>
+                    <img src="icons8-like.gif" alt="icon1">
+                    <img src="icons8-shop.gif" alt="icon2">
+                    <label for="text" style="text-decoration: underline;">LookUp Plan</label>
+                    <br>
+                    <hr style="height: unset;">
+                    <br>
+                    <h3>Welcome to BestBrightness Pongola Shop's Online System
+                    </h3>
+                    <p>Explore a seamless shopping experience at BestBrightness Pongola Shop.
+                         We offer a wide range of quality household cleaning detergents,
+                          equipment, tissue papers, and plastics. Our store aims to provide you
+                           with convenience, value, and excellent service.</p>
+                    
+                </div>
+
+                <div class="sec3">
+                    <h1>FOLLOW US</h1>
+                    <hr>
+                    <br>
+                    <a href="https://www.facebook.com/"><img src="fa fa-facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="fa fa-twitter.png" alt="twitter"></a>
+                    <a href="#"><img src="fa fa-linkedIn.png" alt="linkedin"></a>
+                    <a href="#"><img src="fa fa-instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="fa fa-google.png" alt="google"></a>
+                    <hr style="height: unset;">
+                    <br>
+                    <small><big><b style="font-size: 20px;">Join</b></big> us in creating a cleaner, brighter home with BestBrightness Pongola Shop. Start shopping now and experience the future of convenience!</small>
+                </div>
+            </div>
+            <!--------------------------------------SLider---------------------------------------------------->
+            <div id="box-container">
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pro-removebg-preview.png" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic6.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="th__2_-removebg-preview.png" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="th__3_-removebg-preview.png" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="th__4_-removebg-preview.png" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="th__5_-removebg-preview.png" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="th__6_-removebg-preview.png" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic7.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic8.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic9.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic10.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic11.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic12.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic13.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic14.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic15.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic16.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div  class="image">
+                        <img src="pic17.webp" alt="">
+    
+                        <div class="Button">
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-details">
+                        <div class="product-name">
+                            <a href="#">Mr Clean Liquid</a>
+                            <span>New Cleaing Equipment</span>
+                        </div>
+                        <a href="#" class="price">&#8377;500</a>
+                    </div>
+                </div>
+              </div>
+                <button id="scroll-left">&larr;Back</button>
+              <button id="scroll-right">More&rarr;</button>
+        </section>
+
+      <!------------------------------------Footer---------------------------------------------->
+      <footer class="myfooter">
+        <div class="myfooter-content">
+            <h1>Have Us On You!</h1>
+            <h4>Payment Methods</h4>
+            <img style="opacity: 0.6;" src="py1.svg" alt="pymnt-method1">
+            <img style="opacity: 0.6;" src="py2.svg" alt="pymnt-method2"><br><br>
+            <h5 style="color: white;">Thank You!</h5>
+        </div>
+
+         <div class="myfooter-content">
+            <h4>Shop</h4>
+            <li><a href="#">Daily Deals</a></li>
+            <li><a href="#">App Only Deals</a></li>
+            <li><a href="#">Clearence Sale</a></li>
+            <li><a href="#">Gift Vouchers</a></li>
+        </div>
+
+        <div class="myfooter-content">
+            <h4>Help</h4>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Submit an Idea</a></li>
+            <li><a href="#">Suggest a Product</a></li>
+            <li><a href="#">Collect Order</a></li>
+            <li><a href="#">Returns</a></li>
+        </div>
+
+        <div class="myfooter-content">
+            <h4>Account</h4>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#"> Track Order</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Personal Details</a></li>
+            <li><a href="#">Invoices</a></li>
+        </div>
+
+        <div class="myfooter-content">
+            <h4>Company</h4>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#"> Careers</a></li>
+            <li><a href="#">Sell On Shop</a></li>
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Press & News</a></li>
+            <li><a href="#">Competitions</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Human Right Statement</a></li>
+            <li><a href="#">Speak Up Process</a></li>
+        </div>
+
+        <div class="myfooter-content">
+            <h4>Service</h4>
+            <li><a href="#">Marketing Shop</a></li>
+            <li><a href="#"> Inspiration</a></li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Contact Support</a></li>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
